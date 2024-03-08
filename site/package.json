@@ -1,0 +1,12 @@
+{
+  "name": "man-in-the-arena.site",
+  "version": "1.0.0",
+  "description": "Static page and server for Man In The Arena music.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Casper A Shaheen",
+  "license": "ISC"
+}

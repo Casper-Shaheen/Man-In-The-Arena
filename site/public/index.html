@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Man In The Arena</title>
+</head>
+<body>
+    <div id="menu">
+        <div>
+            <ul id="menu-list">
+                <li>Music</li>
+                <li>Videos</li>
+                <li>Tour</li>
+                <li>Subscribe</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+    <header id="home-splash">
+        <h1>MAN IN<br>THE ARENA</h1>
+    </header>
+    <div id="home-navbar">
+        <div id="home-navbar-row">
+            <div id="menu-icon" onclick="onClickMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <p>MENU</p>
+        </div>
+    </div>
+    
+</body>
+<script>
+    let opened = false;
+    function onClickMenu() {
+        if(!opened) {
+            document.getElementById("menu").animate(
+            [
+                { width: '100vw' },
+            ], {
+                duration: 200,
+                iterations: 1,
+                fill: "forwards",
+                easing: 'ease-in'
+            }
+            );
+            document.getElementById('menu-list').setAttribute('style','display: block;');
+        } else {
+            document.getElementById("menu").animate(
+            [
+                { width: '0vw' },
+            ], {
+                duration: 200,
+                iterations: 1,
+                fill: "forwards",
+                easing: 'ease-in'
+            }
+            );
+            document.getElementById('menu-list').setAttribute('style','display: none;');
+        }
+        opened = !opened;
+        console.log(opened);
+    }
+</script>
+</html>

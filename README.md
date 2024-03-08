@@ -1,0 +1,1 @@
+Currently trying to fix dynamic content-sizing in view of the mobile url search bar which takes up space on the screen.

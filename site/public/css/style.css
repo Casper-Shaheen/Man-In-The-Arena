@@ -12,8 +12,8 @@
       ), url('../assets/images/conner-sidewalk.jpg');
     background-size: cover;
     background-position: center;
-    padding-top: 30vh;
-    height: 58vh;
+    padding-top: 30dvh;
+    height: 58dvh;
     text-align: center;
     color: white;
     letter-spacing: 5px;
@@ -23,14 +23,14 @@
 #home-navbar {
     position: fixed;
     width: 100vw;
-    top: 88vh;
+    top: 88dvh;
     background: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 25px;
     font-weight: 800;
-    height: 12vh;
+    height: 12dvh;
 }
 
 #home-navbar-row
@@ -68,7 +68,7 @@
     flex-direction: column;
     justify-content: center;
     width: 0vw;
-    height: 93vh;
+    height: 93dvh;
     background-color: rgba(0,0,0,0.9);
 }
 
@@ -88,7 +88,7 @@
 
 #menu li 
 {
-    padding: 2vh;
+    padding: 2dvh;
 }
 
 #menu li:hover 

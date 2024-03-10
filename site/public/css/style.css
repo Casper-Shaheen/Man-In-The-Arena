@@ -13,7 +13,7 @@
     background-size: cover;
     background-position: center;
     padding-top: 30lvh;
-    height: 58lvh;
+    height: 62lvh;
     text-align: center;
     color: white;
     letter-spacing: 5px;
@@ -23,14 +23,14 @@
 #home-navbar {
     position: fixed;
     width: 100vw;
-    top: 88lvh;
+    top: 92lvh;
     background: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 25px;
     font-weight: 800;
-    height: 12lvh;
+    height: 8lvh;
 }
 
 #home-navbar-row
@@ -68,7 +68,7 @@
     flex-direction: column;
     justify-content: center;
     width: 0vw;
-    height: 93lvh;
+    height: 92lvh;
     background-color: rgba(0,0,0,0.9);
 }
 

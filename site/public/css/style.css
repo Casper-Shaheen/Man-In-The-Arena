@@ -77,12 +77,18 @@
     font-weight: 700;
 }
 
+#menu a
+{
+    text-decoration: none;
+    color: grey;
+}
+
 #menu li 
 {
     padding: 2lvh;
 }
 
-#menu li:hover 
+#menu a:hover 
 {
     color: white;
     cursor: pointer;

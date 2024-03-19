@@ -5,32 +5,33 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
+
 #home-splash {
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.5), 
-        rgba(0, 0, 0, 0.5)
+        rgba(0, 0, 0, 0.8), 
+        rgba(0, 0, 0, 0.8)
       ), url('../assets/images/conner-sidewalk.jpg');
     background-size: cover;
-    background-position: center;
-    padding-top: 30lvh;
-    height: 62lvh;
+    background-position: top;
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 5em;
     color: white;
-    letter-spacing: 5px;
-    font-size: 34px;
+    height: 85lvh;
 }
 
+
 #home-navbar {
-    position: fixed;
-    width: 100vw;
-    top: 92lvh;
     background: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 25px;
     font-weight: 800;
-    height: 8lvh;
+    height: 70px;
+    box-shadow: 0px 0.25px 2px grey;
 }
 
 #home-navbar-row
@@ -39,26 +40,11 @@
     justify-content: center;
 }
 
-#home-navbar-row p 
-{
-    margin-left: 15px;
-}
 
-#menu-icon div
+#menu-icon 
 {
-    width: 20px;
-    height: 2px;
-    background-color: black;
-    margin: 5.5px 5px;
-}
-
-#menu-icon:hover 
-{
+    height: 38px;
     cursor: pointer;
-}
-#menu-icon:hover div 
-{
-    background-color: grey;
 }
 
 #menu 
@@ -66,15 +52,16 @@
     position: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     width: 0vw;
-    height: 92lvh;
+    height: 100lvh;
     background-color: rgba(0,0,0,0.9);
 }
 
 #menu div {
     display: flex;
     justify-content: center;
+    color: grey;
 }
 
 #menu ul {

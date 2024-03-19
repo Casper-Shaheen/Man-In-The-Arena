@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Srisakdi:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css?v=2.5">
     <title>Man In The Arena</title>
 </head>
 <body>
     <div id="menu">
+        <ul class="menu-list">
+            <li style="text-align: left;" onclick="onClickMenu()">🗙</li>
+        </ul>
         <div>
-            <ul id="menu-list">
+            <ul class="menu-list">
                 <li>Music</li>
                 <li>Videos</li>
                 <li>Tour</li>
@@ -17,21 +23,21 @@
                 <li>Contact</li>
             </ul>
         </div>
+        <div></div>
     </div>
     <header id="home-splash">
-        <h1>MAN IN<br>THE ARENA</h1>
+            <div style="padding-left:100px; letter-spacing: 100px;font-family:'Times New Roman', Times, serif">MAN</div>
+            <div style="padding-left:35px;letter-spacing: 35px;font-family:Srisakdi">In The</div>
+            <div style="padding-left:35px;letter-spacing: 35px; font-family:'Times New Roman', Times, serif">ARENA</div>
     </header>
     <div id="home-navbar">
         <div id="home-navbar-row">
-            <div id="menu-icon" onclick="onClickMenu()">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+            <img src="./assets/images/menu.png" alt="" id="menu-icon" onclick="onClickMenu()">
             <p>MENU</p>
         </div>
     </div>
-    <div style="height: 50svh"></div>
+    <div style="height: 50svh">
+    </div>
 </body>
 <script>
     let opened = false;
@@ -47,7 +53,8 @@
                 easing: 'ease-in'
             }
             );
-            document.getElementById('menu-list').setAttribute('style','display: block;');
+            document.getElementsByClassName('menu-list')[0].setAttribute('style', 'display: block');
+            document.getElementsByClassName('menu-list')[1].setAttribute('style', 'display: block');
         } else {
             document.getElementById("menu").animate(
             [
@@ -59,7 +66,8 @@
                 easing: 'ease-in'
             }
             );
-            document.getElementById('menu-list').setAttribute('style','display: none;');
+            document.getElementsByClassName('menu-list')[0].setAttribute('style', 'display: none');
+            document.getElementsByClassName('menu-list')[1].setAttribute('style', 'display: none');
         }
         opened = !opened;
         console.log(opened);

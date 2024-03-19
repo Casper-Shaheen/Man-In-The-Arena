@@ -17,7 +17,7 @@
     text-align: center;
     flex-direction: column;
     justify-content: center;
-    font-size: 5em;
+    font-size: 3em;
     color: white;
     height: 85lvh;
 }
@@ -124,7 +124,7 @@
 #album-release p
 {
     color: white;
-    font-size: 25px;
+    font-size: 15px;
 }
 
 #album-release img
